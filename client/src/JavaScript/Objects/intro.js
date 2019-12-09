@@ -4,6 +4,7 @@ import createMarkup from '../../utils/markup'
 import * as Snippets from "./snippets"
 import CodeSnippet from '../../utils/pre'
 
+
 function Intro() {
   return (
     <div>
@@ -62,6 +63,38 @@ function Intro() {
           </ol>
         </div>
         <div>
+          <p> Ex: </p>
+          <div>
+            <CodeSnippet classNames="lw line-numbers" snippet={Snippets.example2} />
+          </div>
+          <table className="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <td> <strong>Property/Key </strong></td>
+                <td> <strong>Value </strong></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> firstName </td>
+                <td> Manasa </td>
+              </tr>
+              <tr>
+              <td> lastName </td>
+                <td> R </td>
+              </tr>
+              <tr>
+              <td> age </td>
+                <td> 4 </td>
+              </tr>
+              <tr>
+              <td> eyeColor </td>
+                <td> blue </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
           <p> Since we have learned how to create objects. Lets add some properties to the empty object</p>
           <div>
             <p>
@@ -71,7 +104,7 @@ function Intro() {
               <CodeSnippet classNames="lw line-numbers" snippet={Snippets.objInitialize} />
               <p>
                 Lets revisit one of the definition of Object.<br/>
-                Objects in JavaScript may be defined as an <strong>unordered collection</strong> of <strong>related data</strong>
+                Objects in JavaScript may be defined as an <strong>unordered collection</strong> of <strong>related data</strong>(ex: huddle meeting)
               </p>
               <h6> Unordered collection </h6>
               <p>

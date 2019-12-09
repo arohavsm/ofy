@@ -1,7 +1,7 @@
 import React from 'react'
 import createMarkup from './markup'
 export const CodeSnippet = (props) => (
-  <pre className={props.classNames}>
+  <pre className={'pre'+ (props.classNames ? ' '+props.classNames : '')}>
     <code dangerouslySetInnerHTML={
       createMarkup(props.snippet)
     }>

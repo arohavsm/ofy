@@ -35,6 +35,14 @@ class App extends React.Component {
           <Route path="/reactjs" component={ReactJS} />
         </Switch>
         </div>
+        {/* <footer>
+          <div className="row">
+            <div className="col-sm-12">
+              <a href="https://www.jshero.net/en/success.html" rel="noopener">JS HERO</a>
+              <a href="https://www.jshero.net/en/success.html" rel="noopener">PRACITFY</a>
+            </div>
+          </div>
+        </footer> */}
       </Router>
     );
   }

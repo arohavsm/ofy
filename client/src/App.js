@@ -8,7 +8,7 @@ import {
 import CSSTUT from './CSS'
 import JavaScript from './JavaScript'
 import HTMLTUT from './HTML'
-import ReactJS from './ReactJS'
+import ReactSJ from './ReactJS'
 import Nav from './Nav/Nav'
 import SideNav, {
 	Toggle,
@@ -32,7 +32,7 @@ class App extends React.Component {
           <Route path="/htmltut" component={HTMLTUT} />
           <Route path="/csstut" component={CSSTUT} />
           <Route path="/js" component={JavaScript} />
-          <Route path="/reactjs" component={ReactJS} />
+          <Route path="/reactjs" component={ReactSJ} />
         </Switch>
         </div>
         {/* <footer>

@@ -1,12 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { BrowserRouter as Router, Switch, useRouteMatch, Route } from 'react-router-dom'
+import Basics from './Basics/index'
+import Create from './Basics/create'
 
-class ReactJS extends Component{
 
-  render() {
+function ReactSJ(){
+
+    const match = useRouteMatch()
     return(
-      <p> ReactJS </p>
+      <div>
+         <Router>
+        <Switch>
+          <Route path={`${match.path}/basics`} component={Basics} />
+          <Route path={`${match.path}/create`} component={Create} />
+        </Switch>
+      </Router>
+      </div>
     )
-  }
 }
 
-export default ReactJS
+export default ReactSJ
